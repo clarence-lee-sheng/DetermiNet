@@ -218,7 +218,7 @@ public class Main : MonoBehaviour
 
         Helper.saveCOCO(determinerGenerator.cc_inputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "train_input_labels.json");
         Helper.saveCOCO(determinerGenerator.cc_outputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "train_output_labels.json");
-        EditorApplication.isPlaying = false;
+        // EditorApplication.isPlaying = false;
     }
 
     // Update is called once per frame

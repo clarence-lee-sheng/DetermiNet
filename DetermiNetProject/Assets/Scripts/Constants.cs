@@ -6,7 +6,7 @@ public class Constants : MonoBehaviour
 {
     
     public static string prefabFolder = "prefabs";
-    public static string datasetFolder = "dataset_dir";
+    public static string datasetFolder = "dataset";
     public static string annotationsFolder = "annotations";
     public static string countablesVowelsPath = $"{prefabFolder}/items/countables/vowels";
     public static string countablesConsonantsPath = $"{prefabFolder}/items/countables/consonants";

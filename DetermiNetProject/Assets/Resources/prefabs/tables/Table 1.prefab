@@ -243,8 +243,6 @@ GameObject:
   - component: {fileID: 4012485589377700587}
   - component: {fileID: 2468269852954894093}
   - component: {fileID: 6442920411780374788}
-  - component: {fileID: -6306501191065937587}
-  - component: {fileID: -8445590624356388382}
   - component: {fileID: 2552192643106300504}
   m_Layer: 0
   m_Name: Table 1
@@ -327,34 +325,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &-6306501191065937587
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2809114673722788139}
-  m_Mesh: {fileID: 4300000, guid: 6203d9a8e41d2de4d970283935952983, type: 2}
---- !u!114 &-8445590624356388382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2809114673722788139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24fb3eb29eeebd04d87475bbfb984a31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  createMultiMaterialMesh: 0
-  combineInactiveChildren: 0
-  deactivateCombinedChildren: 0
-  deactivateCombinedChildrenMeshRenderers: 0
-  generateUVMap: 0
-  destroyCombinedChildren: 0
-  folderPath: Prefabs/CombinedMeshes
-  meshFiltersToSkip: []
 --- !u!64 &2552192643106300504
 MeshCollider:
   m_ObjectHideFlags: 0

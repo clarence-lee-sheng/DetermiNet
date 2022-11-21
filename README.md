@@ -17,3 +17,16 @@ You may use the code to generate synthetic images and text pairings to determine
 ```
 pip install -r requirements.txt 
 ``` 
+
+### Generating the dataset
+#### Option 1: Through the Unity Editor 
+1. open up the unity project under "DetermiNetProject" directory 
+2. Setup the resolution to the image resolution that you want to generate (256 x 256)
+![set screen resolution](./assets/screenResolution.png)
+3. run setup.py
+```
+// assume in root directory of the repository 
+cd DetermiNetProject/Assets/utils
+python setup.py
+```
+4. Click play on the unity editor to run the generation script 

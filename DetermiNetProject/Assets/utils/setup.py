@@ -1,6 +1,9 @@
 import json 
 import os
 import shutil
+import numpy as np 
+import pandas as pd
+import inflect
 
 # This file will do the following: 
 # 1. clear all files in the Streaming Assets dataset directory 
@@ -12,8 +15,9 @@ import shutil
 ############### Clear and reinitialised new dataset directory ################
 ##############################################################################
 
-determiners = json.load(open('../config/determiners.json'))
-dataset_dir = "../StreamingAssets/dataset"
+dir_path = os.path.dirname(os.path.realpath(__file__))
+determiners = json.load(open(os.path.join(dir_path, '../config/determiners.json')))
+dataset_dir = os.path.join(dir_path, "../StreamingAssets/dataset")
 images_dir = "images"
 segmentations_dir = "segmentations"
 
@@ -33,4 +37,19 @@ for determiner in determiners:
 ####################### Generate Pluraliized JSON ############################
 ##############################################################################
 
-# categories = json.load(open('../config/categories.json'))
+
+cat_filename = os.path.join(dir_path, "../Scripts/config/categories.json")
+plural_filename = os.path.join(dir_path, "../Scripts/config/plural.json")
+p = inflect.engine()
+
+categories = json.load(open(cat_filename))
+plural = {}
+
+for item in categories.keys(): 
+    if categories[item]["supercategory"] == "countable": 
+        plural_item = p.plural(item)
+        plural[item] = plural_item 
+    else: 
+        plural[item] = item
+
+json.dump(plural, open(plural_filename, 'w'))

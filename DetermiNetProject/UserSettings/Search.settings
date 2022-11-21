@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.2138236A" = ""
+	"last_search.2138236A" = "sampleAnimationPose"
 	"OpenInspectorPreview.2138236A" = "0"
 	"currentGroup.2138236A" = "asset"
 	"last_search.DA949528" = "ForwardRenderer"
@@ -59,6 +59,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"sampleAnimationPose"
 ]
 searchItemFavorites = [
 ]
