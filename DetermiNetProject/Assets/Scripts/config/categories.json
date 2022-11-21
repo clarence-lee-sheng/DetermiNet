@@ -1,0 +1,85 @@
+{
+    "apple": {
+        "id": 0,
+        "name": "apple",
+        "supercategory": "countable" 
+    },
+    "onion": {
+        "id": 1,
+        "name": "onion",
+        "supercategory": "countable" 
+    },
+    "avocado":
+    {
+        "id": 2,
+        "name": "avocado",
+        "supercategory": "countable" 
+    },
+    "orange":
+    {
+        "id": 3,
+        "name": "orange",
+        "supercategory": "countable" 
+    },
+    "egg":
+    {
+        "id": 4,
+        "name": "egg",
+        "supercategory": "countable" 
+    },
+    "carrot": {
+        "id": 5,
+        "name": "carrot",
+        "supercategory": "countable" 
+    },
+    "cucumber": {
+        "id": 6,
+        "name": "cucumber",
+        "supercategory": "countable" 
+    },
+    "lemon": {
+        "id": 7,
+        "name": "lemon",
+        "supercategory": "countable" 
+    },
+    "garlic": {
+        "id": 8,
+        "name": "garlic",
+        "supercategory": "countable" 
+    },
+    "banana": {
+        "id": 9,
+        "name": "banana",
+        "supercategory": "countable" 
+    },
+    "grape juice": {
+        "id": 10,
+        "name": "grape juice",
+        "supercategory": "uncountable_liquid" 
+    },
+    "cranberry juice": {
+        "id": 11,
+        "name": "cranberry juice",
+        "supercategory": "uncountable_liquid" 
+    },
+    "blueberry juice": {
+        "id": 12,
+        "name": "blueberry juice",
+        "supercategory": "uncountable_liquid" 
+    },
+    "papaya juice": {
+        "id": 13,
+        "name": "papaya juice",
+        "supercategory": "uncountable_liquid" 
+    },
+    "vegetable juice": {
+        "id": 14,
+        "name": "vegetable juice",
+        "supercategory": "uncountable_liquid" 
+    },
+    "tray": {
+        "id": 15,
+        "name": "tray",
+        "supercategory": "container" 
+    }
+}

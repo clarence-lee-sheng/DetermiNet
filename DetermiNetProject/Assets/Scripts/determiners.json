@@ -1,0 +1,82 @@
+{ 
+    "a": {
+        "countability": "countable", 
+        "plularity": "singular"
+    }, 
+    "an": {
+        "countability": "countable", 
+        "plularity": "singular"
+    },
+    "my":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "your":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "our":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "neither":{
+        "countability": "countable", 
+        "plularity": "singular"
+    },
+    "either":{
+        "countability": "countable", 
+        "plularity": "singular"
+    },
+    "every":{
+        "countability": "countable", 
+        "plularity": "singular"
+    },
+    "few":{
+        "countability": "countable", 
+        "plularity": "plural"
+    },
+    "many":{
+        "countability": "countable", 
+        "plularity": "plural"
+    },
+    "both":{
+        "countability": "countable", 
+        "plularity": "plural"
+    },
+    "some":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "all":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "any":{
+        "countability": "both", 
+        "plularity": "both"
+    },
+    "little":{
+        "countability": "uncountable", 
+        "plularity": "singular"
+    },
+    "much":{
+        "countability": "uncountable", 
+        "plularity": "singular"
+    },
+    "this": {
+        "countability": "both", 
+        "plularity": "singular"
+    },
+    "that": {
+        "countability": "both", 
+        "plularity": "singular"
+    },
+    "these": {
+        "countability": "both", 
+        "plularity": "plural"
+    },
+    "those": {
+        "countability": "both", 
+        "plularity": "plural"
+    }
+}

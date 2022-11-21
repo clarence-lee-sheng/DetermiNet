@@ -1,0 +1,27 @@
+{
+    "grape juice": {
+        "little": [0.1,0.2],
+        "some": [0.5,0.6],
+        "much": [0.9,1.0]
+    },
+    "cranberry juice": {
+        "little": [0.1,0.2],
+        "some": [0.5,0.6],
+        "much": [0.9,1.0]
+    },
+    "blueberry juice": {
+        "little": [0.1,0.2],
+        "some": [0.5,0.6],
+        "much": [0.9,1.0]
+    },
+    "papaya juice": {
+        "little": [0.1,0.2],
+        "some": [0.5,0.6],
+        "much": [0.9,1.0]
+    },
+    "vegetable juice": {
+        "little": [0.1,0.2],
+        "some": [0.5,0.6],
+        "much": [0.9,1.0]
+    }
+}
