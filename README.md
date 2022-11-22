@@ -32,9 +32,18 @@ python setup.py
 4. Click play on the unity editor to run the generation script 
 
 ## Evaluation scripts 
-Running baseline models 
+To reproduce the results we showed in the paper, you can run coco evaluation for mAP based on the jsons we generated in both ground_truths and predictions directories. 
 
-you can run the Neuro-symbolic model by calling the following code: 
+You may run the following code to see the results 
 ```
-python _________.py
+cd evaluation 
+python evaluation_baseline.py 
 ```
+
+## Retraining the models 
+### Neurosymbolic model
+This section elaborates how you can rerun the Neuro-symbolic model which were explained 
+
+### MDETR/OFA
+For [MDETR](https://github.com/ashkamath/mdetr) and [OFA](https://github.com/OFA-Sys/OFA), you may refer to the repositories in the link to run the baseline models. we have also included the json files that we used in the preprocessed_data directory 
+
