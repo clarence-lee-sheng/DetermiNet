@@ -123,6 +123,7 @@ public class ObjectPool : MonoBehaviour
                         scale[2] = liquidScale * uncountableLiquidScales[name];
                         itemToSpawn.gameObject.transform.GetChild(1).transform.localScale = scale;
                     }
+                    itemToSpawn.liquidLevel = liquidScale;
                     // itemToSpawn.rigidBody.gameObject.GetChild(1).transform.localScale[2] = Helper.getRandomFromRange(liquidRange) * this.uncountableLiquidScales[name];
                 }
             }

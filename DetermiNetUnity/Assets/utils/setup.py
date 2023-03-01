@@ -26,8 +26,8 @@ if os.path.exists(dataset_dir):
 os.makedirs(dataset_dir)
 os.makedirs(os.path.join(dataset_dir, images_dir))
 os.makedirs(os.path.join(dataset_dir, segmentations_dir))
-os.makedirs(os.path.join(dataset_dir, images_dir, "annotations"))
-os.makedirs(os.path.join(dataset_dir, segmentations_dir, "annotations"))
+os.makedirs(os.path.join(dataset_dir, "annotations"))
+# os.makedirs(os.path.join(dataset_dir, segmentations_dir, "annotations"))
 
 for determiner in determiners:
     os.makedirs(os.path.join(dataset_dir, images_dir, determiner))

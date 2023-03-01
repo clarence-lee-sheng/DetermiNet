@@ -15,9 +15,10 @@ public class EnvObject : Object
     public float height {get; set;}
     public float depth {get; set;}
     public string name {get; set;}
+    public float liquidLevel {get; set;}
     // public Rect boundingBoxRect {get; set;}
 
-    public EnvObject(Rigidbody body)
+    public EnvObject(Rigidbody body, float liqLevel=-1)
     {
         rigidBody = body;
         gameObject = rigidBody.gameObject;
@@ -33,8 +34,7 @@ public class EnvObject : Object
         height = (float) objBounds.size[1];
         depth = (float) objBounds.size[2];
 
-        
-
+        liquidLevel = liqLevel; 
         // boundingBoxRect = getGUIBoundingBox(body);
     }
 

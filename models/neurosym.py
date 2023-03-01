@@ -70,7 +70,7 @@ def parse_tfrecord_fn(example, labeled=True):
     sequence_features = {
         "input_bboxes": tf.io.VarLenFeature(tf.int64),
         "output_bboxes": tf.io.VarLenFeature(tf.int64),
-        "input_one_hot": tf.io.VarLenFeature(tf.int64),
+        "input_one_hot": tf.io.VarLenFeature(tf.float64),
         "output_one_hot": tf.io.VarLenFeature(tf.int64)
     }
     context, sequence = tf.io.parse_single_sequence_example(example, context_features=feature_description,

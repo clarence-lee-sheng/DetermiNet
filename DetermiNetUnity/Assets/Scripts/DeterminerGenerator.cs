@@ -522,10 +522,6 @@ public class DeterminerGenerator : MonoBehaviour
                             numEl = UnityEngine.Random.Range(numSelectedRange[0], Math.Min(numSelectedRange[1], numMainObjsSpawned) + 1);
                         }
 
-
-                        
-                        // for (int i = 0; i < numEl; i++)
-                        // {
                         while (randomIndexes.Count < numEl)
                         {
                             int randIdx = UnityEngine.Random.Range(0, pool.active["target"].Count); 
@@ -567,6 +563,10 @@ public class DeterminerGenerator : MonoBehaviour
                         List<EnvObject> allObjects = new List<EnvObject>(pool.active["target"]);
                         allObjects.AddRange(pool.active["notTarget"]);
 
+                        //cc_inputs is the oracle bounding boxes: e.g. it contains annotations of all bounding boxes 
+                        //cc_outputs is the determiner labelled bounding boxes: e.g. it contains annotations of a subset of the bounding boxes based on the determiners
+
+                        // add the coco annotations for all game objects 
                         foreach (EnvObject envObj in allObjects)
                         {
                             GameObject obj = envObj.gameObject;
@@ -575,28 +575,41 @@ public class DeterminerGenerator : MonoBehaviour
                             bbox = Helper.getBoundingBox(obj.GetComponent<Rigidbody>(), Camera.main);
                             area = bbox[2] * bbox[3];
                             iscrowd = 0;
-                            cc_inputs.annotations.Add(new SegmentationAnnotation(
-                                cc_inputs.annotations.Count,
+
+                            cc_inputs.input_oracle_annotations.Add(new OracleSegmentationAnnotation(
+                                cc_inputs.input_oracle_annotations.Count,
                                 image_id,
                                 category_id,
                                 area,
                                 iscrowd, 
-                                bbox 
+                                bbox, 
+                                envObj.liquidLevel
                             ));
-                            //save in output if object is labelled (e.g. not zero)
+
+                            //save in output if object is labelled by the determiner phrase 
+
                             if (obj.layer != 0)
                             {
-                                cc_outputs.annotations.Add(new SegmentationAnnotation(
-                                    cc_outputs.annotations.Count,
+                                cc_inputs.annotations.Add(new SegmentationAnnotation(
+                                    cc_inputs.annotations.Count,
                                     image_id,
                                     category_id,
                                     area,
                                     iscrowd, 
                                     bbox 
                                 ));
+
+                                // cc_outputs.annotations.Add(new SegmentationAnnotation(
+                                //     cc_outputs.annotations.Count,
+                                //     image_id,
+                                //     category_id,
+                                //     area,
+                                //     iscrowd, 
+                                //     bbox 
+                                // ));
                             }
                         }
-
+                      
                         EnvObject mainTray = scene.objects["containerMain"];
                         EnvObject secondaryTray = scene.objects["containerSecondary"];
                         category_id = categories["tray"].id;
@@ -605,28 +618,34 @@ public class DeterminerGenerator : MonoBehaviour
                         int mainTrayArea = mainTrayBbox[2] * mainTrayBbox[3];
                         int secondaryTrayArea = secondaryTrayBbox[2] * secondaryTrayBbox[3];
                         iscrowd = 0;
-                        cc_inputs.annotations.Add(new SegmentationAnnotation(
-                            cc_inputs.annotations.Count,
+
+                        //add the coco annotations for the two trays 
+                        cc_inputs.input_oracle_annotations.Add(new OracleSegmentationAnnotation(
+                            cc_inputs.input_oracle_annotations.Count,
                             image_id,
                             category_id,
                             mainTrayArea,
                             iscrowd, 
-                            mainTrayBbox 
+                            mainTrayBbox, 
+                            -1 
                         ));
-                        cc_inputs.annotations.Add(new SegmentationAnnotation(
-                            cc_inputs.annotations.Count,
+
+                        cc_inputs.input_oracle_annotations.Add(new OracleSegmentationAnnotation(
+                            cc_inputs.input_oracle_annotations.Count,
                             image_id,
                             category_id,
                             secondaryTrayArea,
                             iscrowd, 
-                            secondaryTrayBbox 
+                            secondaryTrayBbox,
+                            -1
                         ));
 
 
-                        cc_inputs.images.Add(new Image(image_id, $"images/{determiner}/{filename}_img.png"));
-                        cc_outputs.images.Add(new Image(image_id, $"segmentations/{determiner}/{filename}_img.png"));
-                        cc_inputs.phrase_annotations.Add(new PhraseAnnotation(cc_inputs.phrase_annotations.Count, image_id, caption));
-                        cc_outputs.phrase_annotations.Add(new PhraseAnnotation(cc_outputs.phrase_annotations.Count, image_id, caption));
+                        cc_inputs.images.Add(new Image(image_id, $"images/{determiner}/{filename}_img.png", caption));
+                        cc_inputs.segmentation_images.Add(new Image(image_id, $"segmentations/{determiner}/{filename}_img.png", caption));
+                        // cc_outputs.images.Add(new Image(image_id, $"segmentations/{determiner}/{filename}_img.png"));
+                        // cc_inputs.phrase_annotations.Add(new PhraseAnnotation(cc_inputs.phrase_annotations.Count, image_id, caption));
+                        // cc_outputs.phrase_annotations.Add(new PhraseAnnotation(cc_outputs.phrase_annotations.Count, image_id, caption));
 
                         counter += 1;
                         

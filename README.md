@@ -14,22 +14,33 @@ You may use the code to generate synthetic images and text pairings to determine
 - Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
 - Install Unity Editor 2021.3.9f1
 - Install required packages
+1. install requirements 
 ```
 pip install -r requirements.txt 
 ``` 
-
-## Generating the dataset
-#### Option 1: Through the Unity Editor 
-1. open up the unity project under "DetermiNetProject" directory 
-2. Setup the resolution to the image resolution that you want to generate (256 x 256)
-![set screen resolution](./assets/screenResolution.png)
-3. run setup.py
+2. run setup.py
 ```
 // assume in root directory of the repository 
 cd DetermiNetProject/Assets/utils
 python setup.py
 ```
-4. Click play on the unity editor to run the generation script 
+
+## Generating the dataset
+#### Through the Unity Editor 
+1. open up the unity project under "DetermiNetProject" directory 
+2. Setup the resolution to the image resolution that you want to generate (256 x 256) under the "Game" Tab 
+![set screen resolution](./assets/screenResolution.png)
+3. Set field of view to 75 on main camera and add ImageSynthesis component to it 
+4. Create a 3D plane object as the floor with the following specifications: 
+- position X: 0, Y: 0, Z: 0
+- rotation X: 0, Y: 0, Z: 0
+- scale X: 3.5, Y:3.5, Z: 3.5
+5. Create a plane object as the scene background with the following specifications: 
+- position X: 0, Y: 0, Z: 17
+- rotation X: 270, Y: 0, Z: 0
+- scale X: 12, Y:12, Z: 12
+6. Give the planes a dark colour by applying the materials in the Resources/materials tab under Assets
+7. Click play on the unity editor to run the generation script 
 
 
 ## Retraining the models 

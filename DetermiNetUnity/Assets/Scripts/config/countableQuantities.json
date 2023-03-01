@@ -1,95 +1,95 @@
 {
     "apple": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "onion": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "avocado":
     {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "orange":
     {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "egg":
     {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "carrot": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "cucumber": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "lemon": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "garlic": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "banana": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "grape juice": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "cranberry juice": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "blueberry juice": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "papaya juice": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     },
     "vegetable juice": {
         "few": [2,3],
-        "some": [5,6],
+        "some": [4,5],
         "many": [8,9],
-        "several": [4,7]
+        "several": [6,7]
     }
 }

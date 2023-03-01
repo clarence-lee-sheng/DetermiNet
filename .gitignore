@@ -58,6 +58,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-DetermiNetProject/Library
-DetermiNetProject/Temp
+DetermiNetUnity/Library
+DetermiNetUnity/Temp
+DetermiNetUnity/Assets/StreamingAssets/
+DetermiNetUnity/Logs
+utils/.ipynb_checkpoints/
+annotations/
 

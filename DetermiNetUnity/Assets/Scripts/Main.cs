@@ -211,14 +211,15 @@ public class Main : MonoBehaviour
         await Task.Delay(400);
         foreach(string determiner in determiners)
         {  
+            Debug.Log("test");
             await determinerGenerator.generate(10000, determiner, scenes);
         };
 
         // await DeterminerGenerator.generate("that", cc_inputs, cc_outputs,  tableInstance, containerMainInstance, containerSecondaryInstance, characterMainInstance, characterSecondaryInstance);
 
-        Helper.saveCOCO(determinerGenerator.cc_inputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "train_input_labels.json");
-        Helper.saveCOCO(determinerGenerator.cc_outputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "train_output_labels.json");
-        // EditorApplication.isPlaying = false;
+        Helper.saveCOCO(determinerGenerator.cc_inputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "annotations_full.json");
+        // Helper.saveCOCO(determinerGenerator.cc_outputs, $"{Application.streamingAssetsPath}/{Constants.datasetFolder}/{Constants.annotationsFolder}", "train_output_labels.json");
+        EditorApplication.isPlaying = false;
     }
 
     // Update is called once per frame

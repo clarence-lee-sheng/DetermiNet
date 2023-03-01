@@ -9,6 +9,8 @@ using System;
 public class COCOAnnotations{
     public List<Category> categories = new List<Category>();
     public List<Image> images = new List<Image>();
+    public List<Image> segmentation_images = new List<Image>();
+    public List<OracleSegmentationAnnotation> input_oracle_annotations = new List<OracleSegmentationAnnotation>();
     public List<SegmentationAnnotation> annotations = new List<SegmentationAnnotation>();
     public List<PhraseAnnotation> phrase_annotations = new List<PhraseAnnotation>();
 }
@@ -35,13 +37,15 @@ public class Image
     [SerializeField] public string file_name;
     [SerializeField] public int width;
     [SerializeField] public int height;
+    [SerializeField] public string caption;
 
-    public Image(int id, string file_name, int width = Constants.imgWidth, int height = Constants.imgHeight)
+    public Image(int id, string file_name, string caption, int width = Constants.imgWidth, int height = Constants.imgHeight)
     {
         this.id = id;
         this.file_name = file_name;
         this.width = width;
         this.height = height;
+        this.caption = caption;
     }
 }
 
@@ -67,6 +71,28 @@ public class SegmentationAnnotation{
         this.area = area;
         this.iscrowd = iscrowd;
         this.bbox = bbox;
+    }
+}
+
+[Serializable]
+public class OracleSegmentationAnnotation{
+    [SerializeField] public int id; 
+    [SerializeField] public int image_id;
+    [SerializeField] public int category_id;
+    [SerializeField] public int area; 
+    [SerializeField] public int iscrowd; 
+    [SerializeField] public List<int> bbox;
+    [SerializeField] public float liqLevel;
+    
+    public OracleSegmentationAnnotation(int id, int image_id, int category_id, int area, int iscrowd, List<int> bbox, float liqLevel)
+    {
+        this.id = id;
+        this.image_id = image_id;
+        this.category_id = category_id;
+        this.area = area;
+        this.iscrowd = iscrowd;
+        this.bbox = bbox;
+        this.liqLevel = liqLevel;
     }
 }
 

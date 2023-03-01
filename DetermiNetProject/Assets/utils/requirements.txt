@@ -1,4 +1,0 @@
-inflect==5.5.2
-numpy==1.22.3
-pandas==1.5.1
-~andas==1.4.1
