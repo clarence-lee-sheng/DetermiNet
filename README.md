@@ -4,8 +4,7 @@
 
 - **Homepage:** [Add homepage URL here if available (unless it's a GitHub repository)]()
 - **Repository:** https://github.com/Reckonzz/DetermiNet
-- **Paper:** [If the dataset was introduced by a paper or there was a paper written describing the dataset, add URL here (landing page for Arxiv paper preferred)]()
-- **Leaderboard:** -
+- **Paper:** [insert paper linke here]()
 - **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg
 
 ### Dataset Summary
@@ -14,9 +13,9 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
 
 ### Supported Tasks and Leaderboards
 
-For each of the tasks tagged for this dataset, give a brief description of the tag, metrics, and suggested models (with a link to their HuggingFace implementation if available). Give a similar description of tasks that were not covered by the structured tag set (repace the `task-category-tag` with an appropriate `other:other-task-name`).
+DetermiNet is a grounded language task focussed on generating bounding boxes based on referencing and quantification from determiners
 
-- `task-category-tag`: The dataset can be used to train a model for [TASK NAME], which consists in [TASK DESCRIPTION]. Success on this task is typically measured by achieving a *high/low* [metric name](https://huggingface.co/metrics/metric_name). The ([model name](https://huggingface.co/model_name) or [model class](https://huggingface.co/transformers/model_doc/model_class.html)) model currently achieves the following score. *[IF A LEADERBOARD IS AVAILABLE]:* This task has an active leaderboard which can be found at [leaderboard url]() and ranks models based on [metric name](https://huggingface.co/metrics/metric_name) while also reporting [other metric name](https://huggingface.co/metrics/other_metric_name).
+Metrics is measured in AP @ 0.5:0.95 based on [pycocotools](https://pypi.org/project/pycocotools/)
 
 ### Languages
 
@@ -55,11 +54,9 @@ As the ground truths for DetermiNet may contain multiple solutions.
 }
 ```
 
-Provide any additional information that is not covered in the other sections about the data here. In particular describe any relationships between data points and if these relationships are made explicit.
-
 ### Data Fields
 
-All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home
+All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field to train the neurosymbolic model for DetermiNet
 
 ### Data Splits
 
@@ -76,27 +73,21 @@ Provide the sizes of each split. As appropriate, provide any descriptive statist
 
 ### Curation Rationale
 
-Determiners is an important word class used in referencing and quantification. Current visuolinguistic datasets do not sufficiently cover the word class determiners.
+Determiners is an important word class used in referencing and quantification. Current visuolinguistic datasets do not sufficiently cover the word class determiners. We seek to cover this gap by creating a comprehensive large scale dataset which covers a large range of determiners. 
 
 ### Source Data and Annotations 
 
 All data and annotations were synthetically generated using unity 
 
-
 ## Considerations for Using the Data
 
 ### Social Impact of Dataset
 
-This dataset contains visuolinguistic data for determiners, which is lacking in many present day computer vision datasets. It serves as a diagnostic dataset to test the capabilities of grounded language models 
+This dataset contains visuolinguistic data for determiners, which is lacking in many present day computer vision datasets. It serves as a diagnostic dataset to test the capabilities of grounded language models on the determiners word class. 
 
 ### Discussion of Biases
 
-Provide descriptions of specific biases that are likely to be reflected in the data, and state whether any steps were taken to reduce their impact.
-
-For Wikipedia text, see for example [Dinan et al 2020 on biases in Wikipedia (esp. Table 1)](https://arxiv.org/abs/2005.00614), or [Blodgett et al 2020](https://www.aclweb.org/anthology/2020.acl-main.485/) for a more general discussion of the topic.
-
-If analyses have been run quantifying these biases, please add brief summaries and links to the studies here.
-
+The generation of the dataset was based on our definitions (refer to Figure 1) in our paper. We provide configuration files to adjust parameters to your preferences 
 
 ## Additional Information
 
@@ -104,10 +95,6 @@ If analyses have been run quantifying these biases, please add brief summaries a
 
 Clarence Lee Sheng: clarence_leesheng@mymail.sutd.edu.sg
 Ganesh Kumar: ...
-<!-- 
-### Licensing Information
-
-Provide the license and link to the license webpage if available. -->
 
 ### Citation Information
 
@@ -126,18 +113,6 @@ If the dataset has a [DOI](https://www.doi.org/), please provide it here.
 ### Contributions
 
 Thanks to [@github-username](https://github.com/<github-username>) for adding this dataset.
-
-
-
-# DetermiNet
-
-DetermiNet is a visuolinguistic dataset based on the word class "determiners". It aims to develop understanding of using determiners for referring expressions.
-
-This is the code used to the DetermiNet dataset as described in the paper: 
-https://openreview.net/pdf?id=UO1e-ReZ4IT
-Presented at ____
-
-You may use the code to generate synthetic images and text pairings to determiner phrases, such as the following: 
 
 ### DetermiNet Dataset 
 ![cover](./assets/cover.png)
