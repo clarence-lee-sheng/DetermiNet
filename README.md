@@ -5,7 +5,7 @@
 - **Homepage:** [Add homepage URL here if available (unless it's a GitHub repository)]()
 - **Repository:** https://github.com/Reckonzz/DetermiNet
 - **Paper:** [insert paper linke here]()
-- **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg and Ganesh, m ganeshkumar@u.nus.edu
+- **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg and Ganesh, m_ganeshkumar@u.nus.edu
 
 ### Dataset Summary
 
