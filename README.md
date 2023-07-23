@@ -94,7 +94,7 @@ The generation of the dataset was based on our definitions (refer to Figure 1) i
 ### Dataset Curators
 
 Clarence Lee Sheng: clarence_leesheng@mymail.sutd.edu.sg
-Ganesh Kumar: ...
+Ganesh Kumar: m_ganeshkumar@u.nus.edu
 
 ### Citation Information
 
