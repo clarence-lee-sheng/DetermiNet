@@ -1,28 +1,16 @@
 
 # DetermiNet
 ## Dataset Description
-
-- **Homepage:** [Add homepage URL here if available (unless it's a GitHub repository)]()
-- **Repository:** https://github.com/Reckonzz/DetermiNet
-- **Paper:** [insert paper linke here]()
+- **Paper:** [insert paper links here]()
 - **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg and Ganesh, m_ganeshkumar@u.nus.edu
 
 ### Dataset Summary
 
-DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It contains 25 determiners with 10000 examples each, totalling 250000 samples. All scenes were synthetically generated using unity.
-
-### Supported Tasks and Leaderboards
-
-DetermiNet is a grounded language task focussed on generating bounding boxes based on referencing and quantification from determiners
+DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It contains 25 determiners with 10000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity.
 
 Metrics is measured in AP @ 0.5:0.95 based on [pycocotools](https://pypi.org/project/pycocotools/)
 
-### Languages
-
-All data is in the English language
-
 ## Dataset Structure
-
 ### Data Instances
 
 As the ground truths for DetermiNet may contain multiple solutions. 
@@ -64,26 +52,11 @@ Train, test and validation splits are provided for the dataset. Stratified split
 
 Provide the sizes of each split. As appropriate, provide any descriptive statistics for the features, such as average length.  For example:
 
-|                         | train | validation | test |
-|-------------------------|------:|-----------:|-----:|
-| Input Sentences         |       |            |      |
-| Average Sentence Length |       |            |      |
-
-## Dataset Creation
-
-### Curation Rationale
-
-Determiners is an important word class used in referencing and quantification. Current visuolinguistic datasets do not sufficiently cover the word class determiners. We seek to cover this gap by creating a comprehensive large scale dataset which covers a large range of determiners. 
-
-### Source Data and Annotations 
-
-All data and annotations were synthetically generated using unity 
-
-## Considerations for Using the Data
-
-### Social Impact of Dataset
-
-This dataset contains visuolinguistic data for determiners, which is lacking in many present day computer vision datasets. It serves as a diagnostic dataset to test the capabilities of grounded language models on the determiners word class. 
+|           Splits        | Samples | Objects    | Ground truth bboxes |
+|-------------------------|---------|-----------:|-----:|
+| Train                   | 175,000 | 2,799,790  | 460,200   |
+| Validation              | 25,000  | 399,654    | 66,023  |
+| Test                    | 50,000  | 799,756    | 131,460     |
 
 ### Discussion of Biases
 
@@ -109,10 +82,6 @@ Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset
 ```
 
 If the dataset has a [DOI](https://www.doi.org/), please provide it here.
-
-### Contributions
-
-Thanks to [@github-username](https://github.com/<github-username>) for adding this dataset.
 
 ### DetermiNet Dataset 
 ![cover](./assets/cover.png)
