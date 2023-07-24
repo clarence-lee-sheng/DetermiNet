@@ -5,7 +5,7 @@
 - **Homepage:** [Add homepage URL here if available (unless it's a GitHub repository)]()
 - **Repository:** https://github.com/Reckonzz/DetermiNet
 - **Paper:** [insert paper linke here]()
-- **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg
+- **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg and Ganesh, m_ganeshkumar@u.nus.edu
 
 ### Dataset Summary
 
@@ -93,8 +93,8 @@ The generation of the dataset was based on our definitions (refer to Figure 1) i
 
 ### Dataset Curators
 
-Clarence Lee Sheng: clarence_leesheng@mymail.sutd.edu.sg \\
-Ganesh Kumar: ...
+Clarence Lee Sheng: clarence_leesheng@mymail.sutd.edu.sg
+Ganesh Kumar: m_ganeshkumar@u.nus.edu
 
 ### Citation Information
 
