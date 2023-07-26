@@ -1,8 +1,16 @@
 
 # DetermiNet
 ## Dataset Description
-- **Paper:** [insert paper links here]()
-- **Point of Contact:** Clarence, clarence_leesheng@mymail.sutd.edu.sg and Ganesh, m_ganeshkumar@u.nus.edu
+- **Paper:** [insert paper link here]()
+- **Point of Contact:** 
+  - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
+  - Ganesh: m_ganeshkumar@u.nus.edu
+
+### DetermiNet Dataset 
+![cover](./assets/cover.png)
+
+### Downloading the dataset: 
+  - Download the images here: https://sutdapac-my.sharepoint.com/:u:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EZdzhZvzLmxDkCvMAsbV_M4BmUkrVfgRx9HMzFLumzvT_A?e=8kyXgZ 
 
 ### Dataset Summary
 
@@ -46,45 +54,6 @@ As the ground truths for DetermiNet may contain multiple solutions.
 
 All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field to train the neurosymbolic model for DetermiNet
 
-### Data Splits
-
-Train, test and validation splits are provided for the dataset. Stratified splitting was done to ensure an even distribution of determiner classes across all splits. All data and annotations were synthetically generated 
-
-Provide the sizes of each split. As appropriate, provide any descriptive statistics for the features, such as average length.  For example:
-
-|           Splits        | Samples | Objects    | Ground truth bboxes |
-|-------------------------|---------|-----------:|-----:|
-| Train                   | 175,000 | 2,799,790  | 460,200   |
-| Validation              | 25,000  | 399,654    | 66,023  |
-| Test                    | 50,000  | 799,756    | 131,460     |
-
-### Discussion of Biases
-
-The generation of the dataset was based on our definitions (refer to Figure 1) in our paper. We provide configuration files to adjust parameters to your preferences 
-
-## Additional Information
-
-### Dataset Curators
-
-Clarence Lee Sheng: clarence_leesheng@mymail.sutd.edu.sg
-Ganesh Kumar: m_ganeshkumar@u.nus.edu
-
-### Citation Information
-
-Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset. For example:
-```
-@article{article_id,
-  author    = {Author List},
-  title     = {Dataset Paper Title},
-  journal   = {Publication Venue},
-  year      = {2525}
-}
-```
-
-If the dataset has a [DOI](https://www.doi.org/), please provide it here.
-
-### DetermiNet Dataset 
-![cover](./assets/cover.png)
 ### Setup 
 - Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
 - Install Unity Editor 2021.3.9f1
@@ -145,3 +114,16 @@ cd evaluation
 python evaluate.py --model_name=ns
 ```
 
+### Citation Information
+
+Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset. For example:
+```
+@article{article_id,
+  author    = {Author List},
+  title     = {Dataset Paper Title},
+  journal   = {Publication Venue},
+  year      = {2525}
+}
+```
+
+If the dataset has a [DOI](https://www.doi.org/), please provide it here.
