@@ -18,10 +18,9 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
 
 Metrics is measured in AP @ 0.5:0.95 based on [pycocotools](https://pypi.org/project/pycocotools/)
 
-## Dataset Structure
-### Data Instances
+### Dataset Structure
 
-As the ground truths for DetermiNet may contain multiple solutions. 
+All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field  to provide annotations for all bounding boxes per image to train the neurosymbolic model for DetermiNet.
 
 ```
 {
@@ -49,10 +48,6 @@ As the ground truths for DetermiNet may contain multiple solutions.
     ]
 }
 ```
-
-### Data Fields
-
-All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field to train the neurosymbolic model for DetermiNet
 
 ### Setup 
 - Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
