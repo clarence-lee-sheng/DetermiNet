@@ -8,26 +8,32 @@
 - **Supervisor**
   - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
-### DetermiNet Dataset 
+### Dataset Summary
+
+DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity.
+
 State-of-the-art visual grounding models can achieve high detection accuracy, but they are not designed to distinguish between all objects versus only certain objects of interest. In particular, determiners are an important word class that is used in the referencing and quantification of nouns. Existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset, a synthetically generated dataset comprising of 250,000 grounded image caption pairs. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
 
-<p align="center">
-<img src="./assets/cover.png" width=550px/>
-</p>
+<figure align="center">
+  <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
+  </figcaption>
+  <br>
+  <img src="./assets/cover.png" width=530px/>
+</figure>
 
 
 ### Downloading the dataset: 
   - Download the images here: https://sutdapac-my.sharepoint.com/:u:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EZdzhZvzLmxDkCvMAsbV_M4BmUkrVfgRx9HMzFLumzvT_A?e=8kyXgZ 
 
-### Dataset Summary
+### Downloading oracle weights 
+  - Download the oracle weights here: 
 
-DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It contains 25 determiners with 10000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity.
-
-Metrics is measured in AP @ 0.5:0.95 based on [pycocotools](https://pypi.org/project/pycocotools/)
 
 ### Dataset Structure
 
-All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field  to provide annotations for all bounding boxes per image to train the neurosymbolic model for DetermiNet.
+All data fields are based on the COCO annotation format. Refer to this link for more information: https://cocodataset.org/#home, We add the "input_oracle_annotations" field  to provide annotations for all bounding boxes per image to train the neurosymbolic model for DetermiNet. 
+
+For all evaluation, metrics was measured in AP @ 0.5:0.95 based on [pycocotools](https://pypi.org/project/pycocotools/)
 
 ```
 {
@@ -72,22 +78,8 @@ python setup.py
 ```
 
 ## Generating the dataset
-#### Through the Unity Editor 
-1. open up the unity project under "DetermiNetProject" directory 
-2. Setup the resolution to the image resolution that you want to generate (256 x 256) under the "Game" Tab 
-![set screen resolution](./assets/screenResolution.png)
-3. Set field of view to 75 on main camera and add ImageSynthesis component to it 
-4. Create a 3D plane object as the floor with the following specifications: 
-- position X: 0, Y: 0, Z: 0
-- rotation X: 0, Y: 0, Z: 0
-- scale X: 3.5, Y:3.5, Z: 3.5
-5. Create a plane object as the scene background with the following specifications: 
-- position X: 0, Y: 0, Z: 17
-- rotation X: 270, Y: 0, Z: 0
-- scale X: 12, Y:12, Z: 12
-6. Give the planes a dark colour by applying the materials in the Resources/materials tab under Assets
-7. Click play on the unity editor to run the generation script 
 
+Setup the dataset by referring to the instruction [here](DATASET_SETUP.md)
 
 ## Retraining the models 
 ### Neurosymbolic model
