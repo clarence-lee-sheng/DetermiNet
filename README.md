@@ -10,9 +10,9 @@
 
 ### Dataset Summary
 
-DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity.
+Determiners are an important word class that is used in the referencing and quantification of nouns, while state-of-the-art visual grounding models can achieve high detection accuracy, they are not designed to distinguish between all objects versus only certain objects of interest. Furthermore, existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset.
 
-State-of-the-art visual grounding models can achieve high detection accuracy, but they are not designed to distinguish between all objects versus only certain objects of interest. In particular, determiners are an important word class that is used in the referencing and quantification of nouns. Existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset, a synthetically generated dataset comprising of 250,000 grounded image caption pairs. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
+DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10,000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
 
 <div align="center">
   <figure>
@@ -29,6 +29,20 @@ State-of-the-art visual grounding models can achieve high detection accuracy, bu
 ### Downloading oracle weights 
   - Download the oracle weights here: 
 
+### Setup 
+- Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
+- Install Unity Editor 2021.3.9f1
+- Install required packages
+1. install requirements 
+```
+pip install -r requirements.txt 
+``` 
+2. run setup.py
+```
+// assume in root directory of the repository 
+cd DetermiNetUnity/Assets/utils
+python setup.py
+```
 
 ### Dataset Structure
 
@@ -61,21 +75,6 @@ For all evaluation, metrics was measured in AP @ 0.5:0.95 based on [pycocotools]
         ...
     ]
 }
-```
-
-### Setup 
-- Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
-- Install Unity Editor 2021.3.9f1
-- Install required packages
-1. install requirements 
-```
-pip install -r requirements.txt 
-``` 
-2. run setup.py
-```
-// assume in root directory of the repository 
-cd DetermiNetProject/Assets/utils
-python setup.py
 ```
 
 ## Generating the dataset
