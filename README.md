@@ -5,6 +5,8 @@
 - **Point of Contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
+- **Supervisor**
+  - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
 ### DetermiNet Dataset 
 State-of-the-art visual grounding models can achieve high detection accuracy, but they are not designed to distinguish between all objects versus only certain objects of interest. In particular, determiners are an important word class that is used in the referencing and quantification of nouns. Existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset, a synthetically generated dataset comprising of 250,000 grounded image caption pairs. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
