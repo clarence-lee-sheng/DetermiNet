@@ -14,13 +14,14 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
 
 State-of-the-art visual grounding models can achieve high detection accuracy, but they are not designed to distinguish between all objects versus only certain objects of interest. In particular, determiners are an important word class that is used in the referencing and quantification of nouns. Existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset, a synthetically generated dataset comprising of 250,000 grounded image caption pairs. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
 
-<figure align="center">
-  <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
-  </figcaption>
-  <br>
-  <img src="./assets/cover.png" width=530px/>
-</figure>
-
+<div align="center">
+  <figure>
+    <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
+    </figcaption>
+    <br>
+    <img src="./assets/cover.png" width=530px/>
+  </figure>
+</div>
 
 ### Downloading the dataset: 
   - Download the images here: https://sutdapac-my.sharepoint.com/:u:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EZdzhZvzLmxDkCvMAsbV_M4BmUkrVfgRx9HMzFLumzvT_A?e=8kyXgZ 
