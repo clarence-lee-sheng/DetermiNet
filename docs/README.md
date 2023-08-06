@@ -2,6 +2,7 @@
 # DetermiNet
 ## Dataset Description
 - **Paper:** [insert paper link here]()
+- **Github repository:** https://github.com/Reckonzz/DetermiNet
 - **Point of Contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
