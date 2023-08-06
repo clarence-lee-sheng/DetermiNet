@@ -2,12 +2,20 @@
 # DetermiNet
 ## Dataset Description
 - **Paper:** [insert paper link here]()
-- **Github repository:** https://github.com/Reckonzz/DetermiNet
+- **Github repository:** [https://github.com/Reckonzz/DetermiNet]()
 - **Point of Contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
 - **Supervisor**
   - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
+
+
+<div align="center">
+  <figure>
+    <br>
+    <img src="./assets/generate_scene.gif" width=1000px/>
+  </figure>
+</div>
 
 ### Dataset Summary
 
@@ -40,7 +48,7 @@ python setup.py
 ```
 
 ### Downloading the dataset: 
-  - Download the images here: https://sutdapac-my.sharepoint.com/:f:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EkI4yjhd-a5Dm3DXgb_3SVQBF8cI5P0-Xs7KI-YKpYfXDQ?e=w33euh
+  - Download the images here: https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing 
 ### Downloading oracle weights 
   - Download the oracle weights here: 
 
