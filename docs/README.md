@@ -19,7 +19,7 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
     <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
     </figcaption>
     <br>
-    <img src="../assets/cover.png" width=530px/>
+    <img src="./assets/cover.png" width=530px/>
   </figure>
 </div>
 
