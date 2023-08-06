@@ -23,22 +23,6 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
   </figure>
 </div>
 
-### Setup 
-- Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
-- Install Unity Editor 2021.3.9f1
-- Install required packages
-1. install requirements 
-```
-pip install -r requirements.txt 
-pip install -e .
-``` 
-2. run setup.py
-```
-// assume in root directory of the repository 
-cd DetermiNetUnity/Assets/utils
-python setup.py
-```
-
 ### Downloading the files: 
 Download the files [here](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing) which contains: 
 
@@ -66,6 +50,21 @@ Setting up the files:
 .
 ```
 
+### Setup 
+- Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
+- Install Unity Editor 2021.3.9f1
+- Install required packages
+1. install requirements 
+```
+pip install -r requirements.txt 
+pip install -e .
+``` 
+2. run setup.py
+```
+// assume in root directory of the repository 
+cd DetermiNetUnity/Assets/utils
+python setup.py
+```
 
 ## Generating the dataset
 Generate your own dataset by referring to the instructions [here](DATASET_SETUP.md)
