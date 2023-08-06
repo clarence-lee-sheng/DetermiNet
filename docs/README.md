@@ -1,5 +1,7 @@
 
-# DetermiNet
+<p style="font-size:30px; font-weight:bold"> 
+DetermiNet: A Large-Scale Diagnostic Dataset for Complex Visually-Grounded Referencing using Determiners
+</p>
 
 Determiners are an important word class that is used in the referencing and quantification of nouns, while state-of-the-art visual grounding models can achieve high detection accuracy, they are not designed to distinguish between all objects versus only certain objects of interest. Furthermore, existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset.
 
