@@ -1,14 +1,9 @@
 
 # DetermiNet
-## Dataset Description
-- **Paper:** [insert paper link here]()
-- **Github repository:** [https://github.com/Reckonzz/DetermiNet]()
-- **Point of Contact:** 
-  - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
-  - Ganesh: m_ganeshkumar@u.nus.edu
-- **Supervisor**
-  - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
+Determiners are an important word class that is used in the referencing and quantification of nouns, while state-of-the-art visual grounding models can achieve high detection accuracy, they are not designed to distinguish between all objects versus only certain objects of interest. Furthermore, existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset.
+
+DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10,000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
 
 <div align="center">
   <figure>
@@ -17,16 +12,23 @@
   </figure>
 </div>
 
+[[Paper]]() 
+[[Supp]]()
+[[Github]](https://github.com/clarence-lee-sheng/DetermiNet)
+
+- **Point of Contact:** 
+  - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
+  - Ganesh: m_ganeshkumar@u.nus.edu
+- **Supervisor**
+  - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
+
+### Download the Dataset 
+
+
 ### Dataset Summary
-
-Determiners are an important word class that is used in the referencing and quantification of nouns, while state-of-the-art visual grounding models can achieve high detection accuracy, they are not designed to distinguish between all objects versus only certain objects of interest. Furthermore, existing datasets place much less emphasis on determiners, compared to other word classes. In order to address this, we have designed the DetermiNet dataset.
-
-DetermiNet is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10,000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners  
 
 <div align="center">
   <figure>
-    <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
-    </figcaption>
     <br>
     <img src="./assets/cover.png" width=530px/>
   </figure>
