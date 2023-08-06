@@ -2,7 +2,7 @@
 # DetermiNet
 ## Dataset Description
 - **Paper:** [insert paper link here]()
-- **Point of Contact:** 
+- **Visit our github link here:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
 - **Supervisor**
@@ -19,15 +19,9 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
     <figcaption>Figure 1. Samples of DetermiNet image-caption pairs, with their bounding box annotations and segmentations
     </figcaption>
     <br>
-    <img src="./assets/cover.png" width=530px/>
+    <img src="./docs/assets/cover.png" width=530px/>
   </figure>
 </div>
-
-### Downloading the dataset: 
-  - Download the images here: https://sutdapac-my.sharepoint.com/:u:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EZdzhZvzLmxDkCvMAsbV_M4BmUkrVfgRx9HMzFLumzvT_A?e=8kyXgZ 
-
-### Downloading oracle weights 
-  - Download the oracle weights here: 
 
 ### Setup 
 - Setup Unity Hub as per https://docs.unity3d.com/hub/manual/InstallHub.html
@@ -36,6 +30,7 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
 1. install requirements 
 ```
 pip install -r requirements.txt 
+pip install -e .
 ``` 
 2. run setup.py
 ```
@@ -43,6 +38,37 @@ pip install -r requirements.txt
 cd DetermiNetUnity/Assets/utils
 python setup.py
 ```
+
+### Downloading the files: 
+Download the files [here](https://sutdapac-my.sharepoint.com/:f:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EkI4yjhd-a5Dm3DXgb_3SVQBF8cI5P0-Xs7KI-YKpYfXDQ?e=w33euh) which contains: 
+
+- The dataset in the images directory 
+- COCO annotations and oracle tfrecords directory 
+- oracle weights 
+- real DetermiNet dataset
+
+Setting up the files: 
+- cd into root directory 
+- extract the images folder and put it into data/ folder 
+- extract annotations folder in root directory 
+- put oracle_weights in oracle/ folder 
+
+```
++ root 
+--+ annotations 
+-----+ oracle_tfrecords 
+--+ data 
+-----+ images 
+--+ oracle
+-----+ oracle_weights 
+.
+.
+.
+```
+
+
+## Generating the dataset
+Generate your own dataset by referring to the instructions [here](DATASET_SETUP.md)
 
 ### Dataset Structure
 
@@ -77,16 +103,14 @@ For all evaluation, metrics was measured in AP @ 0.5:0.95 based on [pycocotools]
 }
 ```
 
-## Generating the dataset
-
-Setup the dataset by referring to the instruction [here](DATASET_SETUP.md)
-
 ## Retraining the models 
-### Neurosymbolic model
-This section elaborates how you can rerun the Neuro-symbolic model which were explained 
+### Training the Oracle model
+```
+python ./oracle/oracle_training.py --image_dir="data/" --tfrecords_dir="annotations/oracle_tfrecords/"
+```
 
 ### MDETR/OFA
-For [MDETR](https://github.com/ashkamath/mdetr) and [OFA](https://github.com/OFA-Sys/OFA), you may refer to the repositories in the link to run the baseline models. we have also included the json files that we used in the preprocessed_data directory 
+For [MDETR](https://github.com/ashkamath/mdetr) and [OFA](https://github.com/OFA-Sys/OFA), you may refer to the repositories in the link to run the baseline models. 
 
 ## Evaluation scripts 
 ### Evaluating baselines 
@@ -107,6 +131,9 @@ Afterwards, run the evaluation script as below, changing the model_name paramete
 cd evaluation 
 python evaluate.py --model_name=ns
 ```
+
+### Real Dataset 
+Download the real dataset here: [add link here]()
 
 ### Citation Information
 
