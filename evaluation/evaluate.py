@@ -22,8 +22,12 @@ split = "bb_test"
 
 annType = "bbox"
 dataDir = "../"
-annFile = f"{dataDir}/annotations/bb_test_annotations.json"
-resFile = f"{dataDir}/predictions/{model_name}_pred_results.json"
+
+if args.model_name == "ns":
+    annFile = f"{dataDir}/annotations/annotations_test.json"
+else: 
+    annFile = f"{dataDir}/annotations/annotations_v1_test.json"
+resFile = f"{dataDir}/annotations/predictions/{model_name}_pred_results.json"
 
 cocoGt = COCO(annFile)
 cocoDt = cocoGt.loadRes(resFile)
