@@ -40,7 +40,7 @@ python setup.py
 ```
 
 ### Downloading the files: 
-Download the files [here](https://sutdapac-my.sharepoint.com/:f:/g/personal/clarence_leesheng_mymail_sutd_edu_sg/EkI4yjhd-a5Dm3DXgb_3SVQBF8cI5P0-Xs7KI-YKpYfXDQ?e=w33euh) which contains: 
+Download the files [here](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing) which contains: 
 
 - The dataset in the images directory 
 - COCO annotations and oracle tfrecords directory 
@@ -133,7 +133,7 @@ python evaluate.py --model_name=ns
 ```
 
 ### Real Dataset 
-Download the real dataset here: [add link here]()
+Download the real dataset [here](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing)
 
 ### Citation Information
 
