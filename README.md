@@ -2,7 +2,8 @@
 # DetermiNet
 ## Dataset Description
 - **Paper:** [insert paper link here]()
-- **Visit our github link here:** 
+- **Site:** [DetermiNet Site](https://clarence-lee-sheng.github.io/DetermiNet/)
+- **Point of contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
 - **Supervisor**
