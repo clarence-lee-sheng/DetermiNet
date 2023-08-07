@@ -15,9 +15,9 @@ Determiners are an important word class that is used in the referencing and quan
   </figure>
 </div>
 
-<div align="center" style="font-size:18px;">
-<a href="test">[Paper]</a>
-<a href="test">[Supp]</a>
+<div align="center" style="font-size:18px; display:flex; justify-content: center">
+<a href="test" style="margin-right:15px; margin-left:-15px">[Paper]</a>
+<a href="test" style="margin-right:15px">[Supp]</a>
 <a href="https://github.com/clarence-lee-sheng/DetermiNet">[Github]</a>
 </div>
 
