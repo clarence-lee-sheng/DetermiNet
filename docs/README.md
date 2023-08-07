@@ -15,7 +15,11 @@ Determiners are an important word class that is used in the referencing and quan
   </figure>
 </div>
 
-[[Paper]]() [[Supp]]() [[Github]](https://github.com/clarence-lee-sheng/DetermiNet)
+<div align="center" style="font-size:18px;">
+<a href="test">[Paper]</a>
+<a href="test">[Supp]</a>
+<a href="https://github.com/clarence-lee-sheng/DetermiNet">[Github]</a>
+</div>
 
 - **Point of Contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
