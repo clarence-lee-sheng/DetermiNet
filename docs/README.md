@@ -3,6 +3,21 @@
 DetermiNet: A Large-Scale Diagnostic Dataset for Complex Visually-Grounded Referencing using Determiners
 </p>
 
+<div align="center" style="display:flex; justify-content: space-evenly">
+   <div>Clarence Lee<sup>1</sup></div>
+   <div>Ganesh Kumar<sup>2</sup></div>
+   <div>Cheston Tan<sup>2</sup></div>
+</div>
+
+<div align="center" style="display:flex; justify-content:center">
+   <div style="margin-right:20px">Design and Artificial Intelligence, SUTD<sup>1</sup></div>
+   <div style="margin-left:20px">Centre for Frontier AI Research, A*STAR<sup>2</sup></div>
+   <!-- <div>m_ganeshkumar@u.nus.edu</div>
+   <div>cheston-tan@i2r.a-star.edu.sg</div> -->
+</div>
+
+
+
 <br> 
 
 Determiners are an important word class that is used in the referencing and quantification of nouns. However existing datasets place less emphasis on determiners, compared to other word classes. Hence, we have designed the DetermiNet dataset, which is a visuolinguistic dataset comprising of the word class determiners. It comprises of 25 determiners with 10,000 examples each, totalling 250,000 samples. All scenes were synthetically generated using unity. The task is to predict bounding boxes to identify objects of interest, constrained by the semantics of the determiners   
@@ -51,6 +66,12 @@ DetermiNet uses a modified ground truth for multiple annotations, to run your mo
     <img src="./assets/cover.png" width=530px/>
   </figure>
 </div>
+
+### Contact us
+- Clarence Lee: clarence_leesheng@mymail.sutd.edu.sg
+- Ganesh Kumar: m_ganeshkumar@u.nus.edu
+- Cheston Tan: cheston-tan@i2r.a-star.edu.sg
+
 
 
 
