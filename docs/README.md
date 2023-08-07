@@ -68,9 +68,9 @@ DetermiNet uses a modified ground truth for multiple annotations, to run your mo
 </div>
 
 ### Contact us
-- Clarence Lee: clarence_leesheng@mymail.sutd.edu.sg
-- M Ganesh Kumar: m_ganeshkumar@u.nus.edu
-- Cheston Tan: cheston-tan@i2r.a-star.edu.sg
+- Clarence Lee: [clarence_leesheng@mymail.sutd.edu.sg]()
+- M Ganesh Kumar: [m_ganeshkumar@u.nus.edu]()
+- Cheston Tan: [cheston-tan@i2r.a-star.edu.sg]()
 
 
 
