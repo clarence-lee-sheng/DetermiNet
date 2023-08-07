@@ -24,7 +24,7 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
 </div>
 
 ### Downloading the files: 
-Download the files [here](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing) which contains: 
+Download the files here [https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing) which contains: 
 
 - The dataset in the images directory 
 - COCO annotations and oracle tfrecords directory 
@@ -133,7 +133,7 @@ python evaluate.py --model_name=ns
 
 ### Real Dataset 
 Download the real dataset [here](https://drive.google.com/drive/folders/1J5dleNxWvFUip5RBsTl6OqQBtpWO0r1k?usp=sharing)
-
+<!-- 
 ### Citation Information
 
 Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset. For example:
@@ -146,4 +146,4 @@ Provide the [BibTex](http://www.bibtex.org/)-formatted reference for the dataset
 }
 ```
 
-If the dataset has a [DOI](https://www.doi.org/), please provide it here.
+If the dataset has a [DOI](https://www.doi.org/), please provide it here. -->
