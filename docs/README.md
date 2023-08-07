@@ -5,7 +5,7 @@ DetermiNet: A Large-Scale Diagnostic Dataset for Complex Visually-Grounded Refer
 
 <div align="center" style="display:flex; justify-content: space-evenly">
    <div>Clarence Lee<sup>1</sup></div>
-   <div>Ganesh Kumar<sup>2</sup></div>
+   <div>M Ganesh Kumar<sup>2</sup></div>
    <div>Cheston Tan<sup>2</sup></div>
 </div>
 
@@ -69,7 +69,7 @@ DetermiNet uses a modified ground truth for multiple annotations, to run your mo
 
 ### Contact us
 - Clarence Lee: clarence_leesheng@mymail.sutd.edu.sg
-- Ganesh Kumar: m_ganeshkumar@u.nus.edu
+- M Ganesh Kumar: m_ganeshkumar@u.nus.edu
 - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
 
