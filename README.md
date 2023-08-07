@@ -63,7 +63,7 @@ pip install -e .
 ```
 // assume in root directory of the repository 
 cd DetermiNetUnity/Assets/utils
-python setup.py
+python setup_unity_and_clear_files.py
 ```
 
 ## Generating the dataset

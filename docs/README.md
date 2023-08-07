@@ -16,9 +16,7 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
   </figure>
 </div>
 
-[[Paper]]() 
-[[Supp]]()
-[[Github]](https://github.com/clarence-lee-sheng/DetermiNet)
+[[Paper]]() [[Supp]]() [[Github]](https://github.com/clarence-lee-sheng/DetermiNet)
 
 - **Point of Contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
@@ -27,6 +25,8 @@ DetermiNet is a visuolinguistic dataset comprising of the word class determiners
   - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
 ### Download the Dataset 
+You may download the dataset here: 
+[DetermiNetv1]()
 
 
 ### Dataset Summary
