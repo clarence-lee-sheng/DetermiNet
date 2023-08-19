@@ -58,7 +58,7 @@ Download real dataset comprising of 100 image caption pairs here: [https://drive
 DetermiNet uses a modified ground truth for multiple annotations, to run your models for evaluation, refer to our [github](https://github.com/clarence-lee-sheng/DetermiNet)
 
 
-### DetermiNet examples
+### DetermiNet examples (25 Determiners, 4 Determiner classes)
 
 <div align="center">
   <figure>
