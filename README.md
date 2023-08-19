@@ -34,8 +34,8 @@ Download the files here [https://drive.google.com/drive/folders/1J5dleNxWvFUip5R
 
 Setting up the files: 
 - cd into root directory 
-- extract the images folder and put it into data/ folder 
-- extract annotations folder in root directory 
+- extract the images folder from DetermiNet-synth and put it into data/ folder 
+- extract annotations folder from DetermiNet-synth in root directory 
 - put oracle_weights in oracle/ folder 
 
 ```
