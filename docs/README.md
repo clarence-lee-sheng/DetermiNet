@@ -62,8 +62,18 @@ DetermiNet uses a modified ground truth for multiple annotations, to run your mo
 
 <div align="center">
   <figure>
-    <br>
-    <img src="./assets/cover.png" width=530px/>
+    <div>
+    <h3>Articles</h3>
+    <img src="./assets/determiner_examples/articles.png" width=1000px/>
+    </div>
+    </div>
+    <h3>Possessives</h3>
+    <img src="./assets/determiner_examples/possessives.png" width=1000px/>
+    </div>
+    <div>
+    <h3>Demonstratives</h3>
+    <img src="./assets/determiner_examples/demonstratives.png" width=1500px/>
+    </div>
   </figure>
 </div>
 
