@@ -54,7 +54,7 @@ Download real dataset comprising of 100 image caption pairs here: [https://drive
 }
 ```
 
-## Evaluation scripts 
+### Evaluation scripts 
 DetermiNet uses a modified ground truth for multiple annotations, to run your models for evaluation, refer to our [github](https://github.com/clarence-lee-sheng/DetermiNet)
 
 
@@ -63,12 +63,14 @@ DetermiNet uses a modified ground truth for multiple annotations, to run your mo
 <div align="center">
   <figure>
     <div>
-    <h3>Articles</h3>
+    <h4>Articles</h4>
     <img src="./assets/determiner_examples/articles.png" width=1000px/>
-    <h3>Possessives</h3>
+    <h4>Possessives</h4>
     <img src="./assets/determiner_examples/possessives.png" width=1000px/>
-    <h3>Demonstratives</h3>
+    <h4>Demonstratives</h4>
     <img src="./assets/determiner_examples/demonstratives.png" width=1300px/>
+    <h4>Quantifiers</h4>
+    <img src="./assets/determiner_examples/quantifiers.png" width=1000px/>
     </div>
   </figure>
 </div>
