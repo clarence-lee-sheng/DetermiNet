@@ -46,11 +46,13 @@ Download real dataset comprising of 100 image caption pairs here: [https://drive
 
 ### Citation Information
 ```
-@article{article_id,
-  author    = {Clarence Lee, Ganesh Kumar, Cheston Tan},
-  title     = {DetermiNet: A Large-Scale Diagnostic Dataset for Complex Visually-Grounded Referencing using Determiners},
-  journal   = {ICCV},
-  year      = {2023}
+@misc{lee2023determinet,
+      title={DetermiNet: A Large-Scale Diagnostic Dataset for Complex Visually-Grounded Referencing using Determiners}, 
+      author={Clarence Lee and M Ganesh Kumar and Cheston Tan},
+      year={2023},
+      eprint={2309.03483},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
