@@ -3,10 +3,9 @@
 ## Dataset Description
 - **Paper:** [https://arxiv.org/abs/2309.03483]()
 - **Site:** [DetermiNet Site](https://clarence-lee-sheng.github.io/DetermiNet/)
-- **Point of contact:** 
+- **Authors:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
   - Ganesh: m_ganeshkumar@u.nus.edu
-- **Supervisor**
   - Cheston Tan: cheston-tan@i2r.a-star.edu.sg
 
 ### Dataset Summary
