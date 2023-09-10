@@ -1,7 +1,7 @@
 
 # DetermiNet
 ## Dataset Description
-- **Paper:** [insert paper link here]()
+- **Paper:** [https://arxiv.org/abs/2309.03483]()
 - **Site:** [DetermiNet Site](https://clarence-lee-sheng.github.io/DetermiNet/)
 - **Point of contact:** 
   - Clarence: clarence_leesheng@mymail.sutd.edu.sg 
